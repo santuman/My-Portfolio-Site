@@ -47,7 +47,7 @@ const SideBar = () => {
 								src="https://img.icons8.com/fluent/96/000000/group-of-projects.png"
 								alt=""
 							/>
-							<span className="link-text">Projects</span>
+							{/* <span className="link-text">Projects</span> */}
 						</Link>
 					</li>
 
