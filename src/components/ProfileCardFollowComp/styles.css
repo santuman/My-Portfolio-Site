@@ -1,0 +1,52 @@
+.home__profile-card-inf {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	margin-top: 35px;
+}
+
+.home__profile-card-inf__item {
+	padding: 10px 35px;
+	min-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+	.home__profile-card-inf__item {
+		padding: 10px 20px;
+		min-width: 120px;
+	}
+}
+
+.home__profile-card-inf__title {
+	font-weight: 700;
+	font-size: 27px;
+	color: #324e63;
+}
+
+.home__profile-card-inf__txt {
+	font-weight: 500;
+	margin-top: 7px;
+}
+
+.home__profile-card-social {
+	margin-top: 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}

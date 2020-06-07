@@ -1,0 +1,105 @@
+.tabContainer {
+	border-bottom: 1px solid rgb(168, 167, 167);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0.2rem;
+	background: #edf0f4;
+}
+.tabCardContainer {
+	margin: 1rem 4rem 2rem 2rem;
+	display: grid;
+	gap: 5rem;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+@media screen and (max-width: 375px) {
+	.tabCardContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 858px) {
+	.tabCardContainer {
+		gap: 7rem;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.tabCardContainer {
+		gap: 8rem;
+	}
+}
+@media screen and (max-width: 800px) {
+	.tabCardContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 600px) {
+	.tabCardContainer {
+		display: flex;
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 420px) {
+	.tabCardContainer {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.tab-btn:focus {
+	border-bottom: 3px solid #3f51b5;
+	color: black;
+}
+
+.tab {
+	display: inline;
+}
+
+.tab-btn {
+	position: relative;
+	background: none;
+	font-size: 15px;
+	color: rgb(114, 112, 112);
+	padding: 12px;
+	min-width: 100px;
+	text-align: center;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+	overflow: hidden;
+	cursor: pointer;
+	border-style: none;
+	outline: none;
+	text-transform: uppercase;
+}
+
+.tab-btn:after {
+	content: "";
+	background: #bac0ba;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: ease all 0.8s;
+}
+
+.tab-btn:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s;
+}

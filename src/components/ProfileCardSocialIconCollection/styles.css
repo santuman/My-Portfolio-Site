@@ -1,0 +1,96 @@
+.home__profile-card-social__item {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	width: 55px;
+	height: 55px;
+	margin: 15px;
+	border-radius: 50%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	color: #fff;
+	background: #405de6;
+	-webkit-box-shadow: 0px 7px 30px rgba(43, 98, 169, 0.5);
+	box-shadow: 0px 7px 30px rgba(43, 98, 169, 0.5);
+	position: relative;
+	font-size: 21px;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+	.home__profile-card-social__item {
+		width: 50px;
+		height: 50px;
+		margin: 10px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.home__profile-card-social__item:hover {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+}
+
+.home__profile-card-social__item.facebook {
+	background: linear-gradient(45deg, #3b5998, #0078d7);
+	-webkit-box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+	box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+}
+
+.home__profile-card-social__item.twitter {
+	background: linear-gradient(45deg, #1da1f2, #0e71c8);
+	-webkit-box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.7);
+	box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.7);
+}
+
+.home__profile-card-social__item.instagram {
+	background: linear-gradient(
+		45deg,
+		#405de6,
+		#5851db,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d
+	);
+	-webkit-box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+	box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+}
+
+.home__profile-card-social__item.behance {
+	background: linear-gradient(45deg, #1769ff, #213fca);
+	-webkit-box-shadow: 0px 4px 30px rgba(27, 86, 231, 0.7);
+	box-shadow: 0px 4px 30px rgba(27, 86, 231, 0.7);
+}
+
+.home__profile-card-social__item.github {
+	background: linear-gradient(45deg, #333333, #626b73);
+	-webkit-box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+	box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+}
+
+.home__profile-card-social__item.codepen {
+	background: linear-gradient(45deg, #324e63, #414447);
+	-webkit-box-shadow: 0px 4px 30px rgba(55, 75, 90, 0.6);
+	box-shadow: 0px 4px 30px rgba(55, 75, 90, 0.6);
+}
+
+.home__profile-card-social__item.link {
+	background: linear-gradient(45deg, #d5135a, #f05924);
+	-webkit-box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+	box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+}
+
+.home__profile-card-social .icon-font {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
