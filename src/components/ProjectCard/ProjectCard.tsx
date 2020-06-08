@@ -1,35 +1,63 @@
 import React from "react";
 import "./styles.css";
 import Badges from "../Badges/Badges";
-const ProjectCard = () => {
+
+type Class = "danger" | "primary" | "secondary" | "warning" | "info";
+
+interface Props {
+	screenShotLink: string;
+	projectName: string;
+	languages: { [key: string]: Class };
+	desc: string;
+	demoLink: string;
+	githubLink: string;
+	codepenLink: string;
+	youtubeLink: string;
+}
+const ProjectCard: React.FC<Props> = ({
+	screenShotLink,
+	projectName,
+	languages,
+	desc,
+	demoLink,
+	githubLink,
+	codepenLink,
+	youtubeLink,
+}) => {
 	return (
 		<div className="card">
-			<div className="card-header">
-				<h2 className="card-title">My Porfolio Site</h2>
+			<div
+				className="card-header"
+				style={{ backgroundImage: `url(${screenShotLink})` }}
+			>
+				<h2 className="card-title">{projectName}</h2>
 			</div>
 			<div className="card-body">
-				{/* <p className="sub-text">Adventure, Comedy • 2020</p> */}
-				{/* <h4 className="mt-0 mb-1">Episodes</h4> */}
 				<div className="chipRow">
-					<Badges name="React" classname="danger" />
-					<Badges name="Typescript" classname="primary" />
+					{Object.entries(languages).map(([key, value]) => {
+						return (
+							<Badges
+								name={key}
+								key={`${key}123`}
+								classname={value}
+							/>
+						);
+					})}
 				</div>
 				<div className="list-episodes">
-					<a href="_blank">
-						This my portfolio site made with react and Typescript
-					</a>
+					<a href="_blank">{desc}</a>
 				</div>
 			</div>
-			<a className="card-link-footer" href="_blank">
+			<a className="card-link-footer" href={demoLink}>
 				DEMO
 			</a>
-			<a className="card-link-footer" href="_blank">
+			<a className="card-link-footer" href={githubLink}>
 				GITHUB
 			</a>
-			<a className="card-link-footer" href="_blank">
+			<a className="card-link-footer" href={codepenLink}>
 				CODEPEN
 			</a>
-			<a className="card-link-footer" href="_blank">
+			<a className="card-link-footer" href={youtubeLink}>
 				YOUTUBE
 			</a>
 		</div>
