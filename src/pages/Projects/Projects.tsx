@@ -1,9 +1,9 @@
-import * as React from "react";
-import PageLayout from "../../components/PageLayout/PageLayout";
-import { Tabs } from "../../components/Tabs/index";
+import * as React from 'react';
+import PageLayout from '../../components/PageLayout/PageLayout';
+import { Tabs } from '../../components/Tabs/index';
 
-import "./styles.css";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import './styles.css';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 function Projects() {
 	return (
@@ -11,9 +11,9 @@ function Projects() {
 			<Tabs>
 				<div className="tabContainer">
 					{/* Group of tabs */}
-					<Tabs.Tab label="a">react</Tabs.Tab>
-					<Tabs.Tab label="b">angular</Tabs.Tab>
-					<Tabs.Tab label="c">vuejs</Tabs.Tab>
+					<Tabs.Tab label="a">Javascript 😎 </Tabs.Tab>
+					<Tabs.Tab label="b">Python😀</Tabs.Tab>
+					<Tabs.Tab label="c">Rust🤔</Tabs.Tab>
 				</div>
 				{/* Tab panels */}
 				<Tabs.Panel label="a">
@@ -22,8 +22,8 @@ function Projects() {
 							screenShotLink="https://raw.githubusercontent.com/SantoshCode/My-Portfolio-Site/master/portfolio.png"
 							projectName="My Portfolio Site"
 							languages={{
-								react: "danger",
-								typescript: "primary",
+								react: 'danger',
+								typescript: 'primary',
 							}}
 							desc="The is my porfolio website built on ReactJS Library"
 							demoLink="https://my-portfolio-santoshcode.netlify.app/"
@@ -35,7 +35,7 @@ function Projects() {
 							screenShotLink="https://raw.githubusercontent.com/SantoshCode/Bing-Map/master/bingMap.png"
 							projectName="Bing Map Using TypeScript"
 							languages={{
-								typescript: "primary",
+								typescript: 'primary',
 							}}
 							desc="Bing Map implementation using Bing api and typescript as core language"
 							demoLink="https://my-portfolio-santoshcode.netlify.app/"
@@ -45,9 +45,9 @@ function Projects() {
 						/>
 						<ProjectCard
 							screenShotLink="https://raw.githubusercontent.com/SantoshCode/kuce-coders/master/kucecoders.png"
-							projectName="Bing Map Using TypeScript"
+							projectName="KUCE-2018 Coders Lists"
 							languages={{
-								react: "danger",
+								react: 'danger',
 							}}
 							desc="Bing Map implementation using Bing api and typescript as core language"
 							demoLink="https://kuce-coders.netlify.app/"
@@ -55,16 +55,48 @@ function Projects() {
 							codepenLink=""
 							youtubeLink=""
 						/>
+						<ProjectCard
+							screenShotLink="https://raw.githubusercontent.com/SantoshCode/SysAdmin-Networking-Tools/master/tracer.png"
+							projectName="SysAdmin | Networking Tool"
+							languages={{
+								react: 'danger',
+								electron: 'primary',
+							}}
+							desc="Trace Route plus basic networking tools"
+							demoLink=""
+							githubLink="https://github.com/SantoshCode/SysAdmin-Networking-Tools"
+							codepenLink=""
+							youtubeLink=""
+						/>
+						<ProjectCard
+							screenShotLink="https://raw.githubusercontent.com/SantoshCode/IPOD-desing-html-css-vanilla-js/master/ipod2.png"
+							projectName="Working web Ipod"
+							languages={{
+								HTML: 'primary',
+								CSS: 'primary',
+								Javascript: 'danger',
+							}}
+							desc="Web Implementation of Ipod"
+							demoLink=""
+							githubLink="https://github.com/SantoshCode/IPOD-desing-html-css-vanilla-js"
+							codepenLink=""
+							youtubeLink=""
+						/>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
 					</div>
 				</Tabs.Panel>
 				<Tabs.Panel label="b">
-					This is tab B{" "}
+					This is tab B{' '}
 					<span role="img" aria-label="Diamond">
 						Angular
 					</span>
 				</Tabs.Panel>
 				<Tabs.Panel label="c">
-					This is tab C{" "}
+					This is tab C{' '}
 					<span role="img" aria-label="Ghost">
 						VueJS
 					</span>

@@ -1,0 +1,323 @@
+.about-title {
+	text-align: center;
+	font-size: 1000px;
+	margin-top: 1rem;
+}
+.about-container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	overflow: hidden;
+}
+
+.about-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 860px;
+}
+
+.shoeBackground {
+	position: relative;
+	width: 50%;
+	height: 475px;
+	box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+		0 15px 35px rgba(0, 0, 0, 0.1);
+	transition: 0.5s;
+}
+
+.gradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -2;
+}
+
+.first {
+	z-index: 0;
+	animation: 1s width ease;
+}
+
+@keyframes width {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+.second {
+	z-index: -1;
+}
+
+.gradient[color='blue'] {
+	background-color: #4158d0;
+	background-image: linear-gradient(
+		43deg,
+		#4158d0 0%,
+		#c850c0 46%,
+		#ffcc70 100%
+	);
+}
+
+.about-profile {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.9;
+}
+
+.about-info {
+	width: 50%;
+	background-color: #fff;
+	/* z-index: 1; */
+	margin-bottom: 10rem;
+	padding: 35px 40px;
+	box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+		0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.developer-title {
+	padding: 0 0 10px 0;
+}
+
+.developer-title div {
+	display: flex;
+	align-items: center;
+}
+
+.developer-title div .big {
+	margin-right: 10px;
+	font-size: 2rem;
+	color: #333;
+	line-height: 1;
+}
+
+.developer-title div .new {
+	background-color: #2175f5;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.developer-title,
+.description,
+.color-container,
+.size-container {
+	border-bottom: 1px solid #dadada;
+}
+
+.description {
+	padding: 10px 0;
+}
+
+.about-title {
+	color: #3a3a3a;
+	font-weight: 600;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.about-text {
+	color: #555;
+	font-size: 17px;
+}
+
+.color-container {
+	padding: 10px 0;
+}
+
+.colors {
+	padding: 8px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.color {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin: 0 10px;
+	border: 5px solid;
+	cursor: pointer;
+	transition: 0.5s;
+	color: #fff;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.color-js {
+	color: #333;
+}
+.color-py {
+	color: #fff1b7;
+}
+
+.color[color='blue'] {
+	background-color: #2175f5;
+	border-color: #2175f5;
+}
+
+.color[color='yellow'] {
+	background-color: #f8d548;
+	border-color: #f8d548;
+}
+
+.color[color='green'] {
+	background-color: #437dad;
+	border-color: #437dad;
+}
+
+.size-container {
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+
+.sizes {
+	padding: 8px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fa-facebook {
+	color: #0777e8;
+}
+.fa-twitter {
+	color: #1c9eed;
+}
+.fa-youtube {
+	color: #fe0000;
+}
+.size {
+	width: 40px;
+	height: 40px;
+	border-radius: 6px;
+	background-color: #eee;
+	margin: 0 10px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.size.active {
+	background-color: #2175f5;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.hire-me {
+	padding-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hire-link {
+	padding: 0.7rem 1rem;
+	background-color: #2175f5;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 1.1rem;
+	transition: 0.5s;
+}
+
+.hire-link:hover {
+	transform: scale(1.1);
+}
+
+.hire-link i {
+	margin-right: 2px;
+}
+
+@media (max-width: 1000px) {
+	.about-card {
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 5rem;
+		box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	.about-card > div {
+		width: 100%;
+		box-shadow: none;
+	}
+
+	.about-profile {
+		top: 20%;
+		left: 5%;
+	}
+}
+
+@media (max-width: 490px) {
+	.about-profile {
+		font-size: 7rem;
+	}
+
+	.developer-title div .big {
+		font-size: 1.3rem;
+	}
+
+	.new {
+		padding: 2px 6px;
+		font-size: 0.9rem;
+	}
+
+	.about-title {
+		font-size: 0.9rem;
+	}
+
+	.about-text {
+		font-size: 0.8rem;
+	}
+
+	.hire-link {
+		padding: 0.5rem 0.8rem;
+		font-size: 0.8rem;
+	}
+
+	.size {
+		width: 30px;
+		height: 30px;
+		margin: 0 8px;
+		font-size: 0.9rem;
+		line-height: 30px;
+	}
+
+	.color {
+		text-align: center;
+		margin: 0 6px;
+		width: 0 20px;
+		width: 20px;
+		height: 20px;
+		border-width: 4px;
+	}
+
+	.about-info {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.hire-link i {
+		display: none;
+	}
+
+	.about-container {
+		padding: 20px;
+	}
+}

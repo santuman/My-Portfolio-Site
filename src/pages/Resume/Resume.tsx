@@ -1,7 +1,7 @@
-import React from "react";
-import PageLayout from "../../components/PageLayout/PageLayout";
-import "./styles.css";
-import ProfileCardPic from "../../components/ProfileCardPic/ProfileCardPic";
+import React from 'react';
+import PageLayout from '../../components/PageLayout/PageLayout';
+import './styles.css';
+import ProfileCardPic from '../../components/ProfileCardPic/ProfileCardPic';
 const Resume = () => {
 	return (
 		<PageLayout>
@@ -27,15 +27,17 @@ const Resume = () => {
 							<li>98000000</li>
 							<li>santsubcode@gmail.com</li>
 							<li>
-								<a href="santoshcode.com">santoshcode.com</a>
+								<a href="santoshsubedi.com.np">
+									santoshsubedi.com.np
+								</a>
 							</li>
 							<li>Kathmandu, Nepal</li>
 						</ul>
 					</div>
 					<div className="contact-presentation">
 						<p>
-							I love devloping Web and Mobile apps and Organising
-							Social Activites for Nation{" "}
+							I am a pasonate programmer, quick learner and love
+							web & mobile development
 						</p>
 					</div>
 					<div className="contact-social clearfix">
@@ -46,7 +48,7 @@ const Resume = () => {
 						</ul>
 						<ul className="list-content">
 							<li>
-								<a href="_blank">@kanwar_ak</a>
+								<a href="_blank">@</a>
 							</li>
 							<li>
 								<a href="_blank">link</a>
@@ -90,7 +92,7 @@ const Resume = () => {
 
 							<div className="job-wrapper clearfix">
 								<div className="experience-title">
-									Front End Developer{" "}
+									Front End Developer{' '}
 								</div>
 								<div className="company-description">
 									<p>
@@ -135,7 +137,7 @@ const Resume = () => {
 
 							<div className="job-wrapper clearfix">
 								<div className="experience-title">
-									UI DEVELOPER/LAMP{" "}
+									UI DEVELOPER/LAMP{' '}
 								</div>
 								<div className="company-description">
 									<p>
@@ -155,7 +157,7 @@ const Resume = () => {
 							<div className="job-wrapper clearfix">
 								<div className="experience-title">
 									Freelance, Web Designer / Web Developer,
-									IT-admin{" "}
+									IT-admin{' '}
 								</div>
 								<div className="company-description">
 									<p>
@@ -178,9 +180,8 @@ const Resume = () => {
 									CSS / CSS3 / BOOTSTRAP
 								</li>
 								<li className="skill-percentage">Javascript</li>
-								<li className="skill-percentage">Jquery</li>
+								<li className="skill-percentage">Python</li>
 								<li className="skill-percentage">ReactJs</li>
-								<li className="skill-percentage">Photoshop</li>
 								<li className="skill-percentage">BASIC PHP</li>
 								<li className="skill-percentage">
 									BASIC MYSQL

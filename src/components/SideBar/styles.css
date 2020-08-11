@@ -1,7 +1,6 @@
 .navbar {
 	position: fixed;
 	background-color: var(--bg-primary);
-	/* background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%); */
 	transition: width 600ms ease;
 	overflow: hidden;
 }
@@ -20,10 +19,6 @@
 	width: 100%;
 	margin-top: 2rem;
 }
-
-/* .nav-item:last-child {
-	margin-top: auto;
-} */
 
 .nav-link {
 	display: flex;

@@ -7,10 +7,12 @@
 	background: #edf0f4;
 }
 .tabCardContainer {
-	margin: 1rem 4rem 2rem 2rem;
 	display: grid;
 	gap: 5rem;
-	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	margin-left: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	grid-template-columns: repeat(3, 0.4fr);
 }
 
 @media screen and (max-width: 375px) {
@@ -85,7 +87,7 @@
 }
 
 .tab-btn:after {
-	content: "";
+	content: '';
 	background: #bac0ba;
 	display: block;
 	position: absolute;
