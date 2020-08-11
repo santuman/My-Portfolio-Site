@@ -2,4 +2,4 @@
 
 ## Demo
 
-https://my-portfolio-santoshcode.netlify.app/
+santoshsubedi.com.np

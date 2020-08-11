@@ -19,7 +19,7 @@ function Projects() {
 				<Tabs.Panel label="a">
 					<div className="tabCardContainer">
 						<ProjectCard
-							screenShotLink="https://raw.githubusercontent.com/SantoshCode/My-Portfolio-Site/master/portfolio.png"
+							screenShotLink="https://i.ibb.co/djHNkqc/my-port-min.png"
 							projectName="My Portfolio Site"
 							languages={{
 								react: 'danger',
