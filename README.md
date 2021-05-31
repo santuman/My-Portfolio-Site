@@ -2,4 +2,4 @@
 
 ## Demo
 
-santoshsubedi.com.np
+https://portfolio-design-santosh.netlify.app
